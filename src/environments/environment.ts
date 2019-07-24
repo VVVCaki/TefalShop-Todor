@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCGhXSQwGqYaQb2fuicX3VhSAUpAdE6RU4",
+    authDomain: "tefal-shop.firebaseapp.com",
+    databaseURL: "https://tefal-shop.firebaseio.com",
+    projectId: "tefal-shop",
+    storageBucket: "",
+    messagingSenderId: "762647253062",
+    appId: "1:762647253062:web:007fc76be982c109"
+  }
 };
 
 /*

@@ -1,0 +1,45 @@
+#divForm {
+    width: 450px;
+    height: 650px;
+    font-family: monospace;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    top: 50px;
+    right: 50px;
+    color: rgb(202, 1, 1);
+ 
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 5%;
+    margin-bottom: 300px;
+}
+
+.fa{
+    color:rgb(202, 1, 1);
+    font-size: 30px;
+    padding-left:10px;
+}
+
+.btn {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    background-color: rgb(202, 1, 1);
+    color: black;
+}
+
+.form-control.ng-pristine.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+.alert{
+    background-color: rgb(202, 1, 1);
+    color:white;
+    font-size: 10px;
+    font-weight: bold;
+}
+

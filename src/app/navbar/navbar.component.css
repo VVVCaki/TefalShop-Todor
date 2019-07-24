@@ -1,0 +1,9 @@
+nav .navbar-nav  li a{
+    font-family: monospace !important;
+    font-weight: bold !important;
+    }
+
+.nav-link, .navbar-brand {
+    font-family: monospace !important;
+    font-weight: bold !important;
+}

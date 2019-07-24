@@ -1,0 +1,29 @@
+<h3>Lista Tefal proizvoda</h3>
+<div class="row p-4">
+    <div *ngFor="let proizvod of proizvodi; index as proizvodId">
+       <div class="col-md-6">
+           <div class="card" style="width: 20rem">
+               <img class="cars-img-top" [src]="proizvod.url" >
+               <div class="card-block">
+                 <h5 class="card-title">{{proizvod.name}}</h5>
+                 <p class="card-text" style="font-size: 30px; font-weight: bold;">€{{proizvod.price}}</p>
+                
+                 <a 
+                    class="add-to-cart btn btn-info" 
+                    [routerLink]="['/opis', proizvodId]"
+                    style="color: white; font-weight: bold;; margin-right: 10px; font-family: monospace;">
+                    Detaljnije
+                </a>
+                
+
+                <ng-template [ngIf]="autentifikacijaService.prijavljen()">
+                    <a 
+                        class="add-to-cart btn btn-success"
+                        (click)="staviUKorpu(proizvod)"
+                        style="color: white; font-weight: bold; font-family: monospace; cursor: pointer">
+                        Ubaci u korpu
+                    </a></ng-template>
+                
+       </div>
+   </div>
+  </div>

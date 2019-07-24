@@ -1,0 +1,49 @@
+h2 {
+    padding-top: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.div1 {
+    font-family: monospace;
+    color: white ;
+    font-weight: bold;
+    
+}
+
+.container {
+    background-color: rgba(238, 8, 8, 0.705);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.alert{
+    background-color: rgb(66, 4, 4);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: monospace;
+    color:  rgb(202, 1, 1);
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-to-cart {
+    float: right;
+    top:20px;
+    right:20px;
+    margin-right: 70px;
+    font-family: monospace;
+
+}

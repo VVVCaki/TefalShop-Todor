@@ -1,0 +1,45 @@
+#section{
+    background: url(/assets/pozadinacontact.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#section .bckg{
+    background-color: rgba(12, 12, 12, 0.712);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 150px;
+}
+.card-form{
+   opacity: 0.9;
+   background-color: green ;
+   border-radius: 5%;
+   border: 2px solid black;
+}
+
+#email, #password {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.btn {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.display-4, h4 {
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+
+}
+
+.alert {
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+    font-family: monospace;
+}

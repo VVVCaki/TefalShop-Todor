@@ -1,0 +1,21 @@
+h1 {
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(202, 1, 1);
+    font-size: 40px;
+}
+
+#p1 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color:  rgb(202, 1, 1);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+img {
+    width: 200px;
+    height: 50px;
+}

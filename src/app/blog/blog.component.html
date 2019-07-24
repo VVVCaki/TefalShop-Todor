@@ -1,0 +1,44 @@
+<h3>Novosti o Tefal Shopu</h3>
+<div>
+        <ng-template [ngIf]="autentifikacijaService.prijavljen()">
+            <a 
+                style="margin-left:20px; margin-bottom:20px; color: white; font-weight: bold;"
+                class="add-to-cart btn btn-danger" 
+                routerLink='/addblog'>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Dodaj blog
+            </a>
+        </ng-template>
+</div>
+<div *ngFor="let blog of bloglist; index as blogId">
+        <div class="col-md-11 row" id="cart"  >
+            <img class="cars-img-top" [src]="blog.url" >
+            <div class="col-md-7">
+                <div class="card-block ">
+                    <h5 class="card-title">{{blog.title}}</h5>
+                            <p id="datep"><em>{{blog.date}}</em></p>
+                            <p>{{blog.description}}</p>
+                        <div id="editbtn">
+                                <ng-template [ngIf]="autentifikacijaService.prijavljen()">
+                                        <a 
+                                            class="add-to-cart btn btn-success" 
+                                            [routerLink]="['/blog', blogId]">
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            Izmeni
+                                        </a>
+                                </ng-template>
+                        </div>
+                       <p id="bottomrow" style="text-align: center; font-size: 25px;  ">
+                            <a href="https://www.facebook.com/">
+                                <i class="fa fa-facebook-square" aria-hidden="true" style="padding-right: 40px; color: white;"></i>
+                            </a>
+                            <a href="https://twitter.com/twitter?lang=en">
+                                <i class="fa fa-twitter-square" style="padding-right: 40px; color: white;" ></i>
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <i class="fa fa-instagram" aria-hidden="true" style="padding-right: 40px; color: white;"></i>
+                            </a>
+                            
+                       </p>
+              </div>
+            </div>

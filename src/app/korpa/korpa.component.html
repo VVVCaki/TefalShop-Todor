@@ -1,0 +1,66 @@
+<h1>Shooping Cart</h1>
+
+<div id="tableDIV">
+    <a 
+    class="add-to-cart btn btn-danger" 
+    routerLink='/shop'
+    style="color: white; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+    font-family: monospace;
+    cursor: pointer;">
+    <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+    Nazad u Shop
+</a>
+<a 
+  class="btn btn-success"  
+  style=
+       "color: white; 
+        font-weight: bold;
+        margin-left: 20px; 
+        margin-bottom: 10px;
+        font-family: monospace;
+        cursor: pointer;"
+  (click)="isprazniKorpu(proizvod)">
+  Isprazni Korpu
+</a>
+    <table class="table table-collapse col-md-10  table-success table-bordered table-hover " >
+        <thead>
+            <tr>
+                <td></td>
+                <td>Proizvodi</td>
+                <td>Cena</td>
+                <td>Kolicina</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let proizvod of korpa" >
+            <tr>
+                <td><img class="cars-img-top align-middle" [src]="proizvod.url" style="height:80px ; width: auto ;"></td>
+                <td class="align-middle" style="text-align: left;">{{proizvod.name}}</td>
+                <td class="align-middle">{{proizvod.price}}</td>
+                <td class="align-middle">{{brojStavki()}}</td>
+                <td class="align-middle"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div style="padding-top: 20px; float: right; margin-right: 220px;">
+    <a 
+    class="btn btn-danger"  
+    style=
+        "color: white; 
+            font-weight: bold;
+            margin-left: 20px; 
+            margin-bottom: 10px;
+            font-family: monospace;
+            font-size: 16px;
+            cursor: pointer;"
+    (click)="izvrsiKupovinu()">
+    <i class="fa fa-shopping-cart" style="font-size:16px;  "></i>
+    Kupi
+    </a>
+</div>
+
+
+
